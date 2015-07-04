@@ -1,5 +1,5 @@
 <?
-
+error_reporting(0);
 // argument 1: mapping between CMU's arpabet subset and desired output
 // argument 2: optional, include inflection marker column, defaults to false
 // argument 3: optional, limit number of rows
@@ -42,15 +42,22 @@ foreach($dict as &$entry):
 
 	$out = [];
 	$out[0] = array_shift($entry);
+
+
+
 	foreach($entry as $glyph):
+
 		if (!$map[$glyph] || $map[$glyph] === 0) {continue;}
+		// echo  $glyph;
+		// continue;
 		$map[$glyph] = ($map[$glyph] ? $map[$glyph] : $glyph);
 		$out[1] .= $map[$glyph];
 		if (strcmp($map[$glyph], "ˈ") === 0 || strcmp($map[$glyph], "ˌ") === 0) {continue;}
 		$out[2] .= $map[$glyph];
 	endforeach;
+	// echo "\n";
 
-
+	// continue;
 	// foreach($out as &$o):
 		echo str_pad_unicode($out[0], 25, " ");
 		if ($inflections) {
@@ -66,5 +73,4 @@ foreach($dict as &$entry):
 endforeach;
 
 ini_set("memory_limit", "128M");
-
 
