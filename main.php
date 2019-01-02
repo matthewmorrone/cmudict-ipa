@@ -8,7 +8,7 @@ error_reporting(0);
 
 ini_set("memory_limit", "256M");
 
-include "strPadUnicode.php";
+include "str_pad_unicode.php";
 
 $file = file($argv[1]);
 
@@ -23,7 +23,7 @@ foreach($file as &$line):
 	$map[$line[0]] = $line[1];
 endforeach;
 
-$dict = file("cmudict.tsv");
+$dict = file("cmu-no-stress.tsv");
 $func = function($a) {
 	return  !($a[0] === ";" && $a[1] === ";" && $a[2] === ";");
 };
