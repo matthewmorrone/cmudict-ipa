@@ -1,0 +1,54 @@
+!exclamation-point	eh2 k s k l ah0 m ey1 sh ah0 n p oy2 n t
+"close-quote	k l ow1 z k w ow1 t
+"double-quote	d ah1 b ah0 l k w ow1 t
+"end-of-quote	eh1 n d ah0 v k w ow1 t
+"end-quote	eh1 n d k w ow1 t
+"in-quotes	ih1 n k w ow1 t s
+"quote	k w ow1 t
+"unquote	ah1 n k w ow1 t
+#sharp-sign	sh aa1 r p s ay1 n
+%percent	p er0 s eh1 n t
+&ampersand	ae1 m p er0 s ae2 n d
+(begin-parens	b ih0 g ih1 n p er0 eh1 n z
+(in-parentheses	ih1 n p er0 eh1 n th ah0 s iy2 z
+(left-paren	l eh1 f t p er0 eh1 n
+(open-parentheses	ow1 p ah0 n p er0 eh1 n th ah0 s iy2 z
+(paren	p er0 eh1 n
+(parens	p er0 eh1 n z
+(parentheses	p er0 eh1 n th ah0 s iy2 z
+)close-paren	k l ow1 z p er0 eh1 n
+)close-parentheses	k l ow1 z p er0 eh1 n th ah0 s iy2 z
+)end-paren	eh1 n d p er0 eh1 n
+)end-parens	eh1 n d p er0 eh1 n z
+)end-parentheses	eh1 n d p er0 eh1 n th ah0 s iy2 z
+)end-the-paren	eh1 n d dh ah0 p er0 eh1 n
+)paren	p er0 eh1 n
+)parens	p er0 eh1 n z
+)right-paren	r ay1 t p er0 eh1 n
+)right-paren(1)	r ay1 t p eh1 r ah0 n
+)un-parentheses	ah1 n p er0 eh1 n th ah0 s iy1 z
+,comma	k aa1 m ah0
+-dash	d ae1 sh
+-hyphen	hh ay1 f ah0 n
+...ellipsis	ih0 l ih1 p s ih0 s
+.decimal	d eh1 s ah0 m ah0 l
+.dot	d aa1 t
+.full-stop	f uh1 l s t aa1 p
+.period	p ih1 r iy0 ah0 d
+.point	p oy1 n t
+/slash	s l ae1 sh
+:colon	k ow1 l ah0 n
+;semi-colon	s eh1 m iy0 k ow1 l ah0 n
+;semi-colon(1)	s eh1 m ih0 k ow2 l ah0 n
+?question-mark	k w eh1 s ch ah0 n m aa1 r k
+{brace	b r ey1 s
+{left-brace	l eh1 f t b r ey1 s
+{open-brace	ow1 p eh0 n b r ey1 s
+}close-brace	k l ow1 z b r ey1 s
+}right-brace	r ay1 t b r ey1 s
+'end-inner-quote	eh1 n d ih1 n er0 k w ow1 t
+'end-quote	eh1 n d k w ow1 t
+'inner-quote	ih1 n er0 k w ow1 t
+'single-quote	s ih1 ng g ah0 l k w ow1 t
+'quote	k w ow1 t
+'apostrophe	ah0 p aa1 s t r ah0 f iy0
