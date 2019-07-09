@@ -22,12 +22,10 @@ foreach($file as &$line):
 	$line = array_map("trim", $line);
 	$map[$line[0]] = $line[1];
 endforeach;
-
 $dict = file("cmu-no-stress.tsv");
-$func = function($a) {
+$dict = array_filter($dict, function($a) {
 	return  !($a[0] === ";" && $a[1] === ";" && $a[2] === ";");
-};
-$dict = array_filter($dict, $func);
+});
 if ($argv[3]) {
 	$dict = array_slice($dict, 0, $argv[3]);
 }
@@ -39,37 +37,21 @@ foreach($dict as &$entry):
 	$entry[1] = preg_replace("/(\w\w)(\d)/", "$1 $2", $entry[1]);
 	$entry = implode(" ", $entry);
 	$entry = explode(" ", $entry);
-
 	$out = [];
 	$out[0] = array_shift($entry);
-
-
-
 	foreach($entry as $glyph):
-
 		if (!$map[$glyph] || $map[$glyph] === 0) {continue;}
-		// echo  $glyph;
-		// continue;
 		$map[$glyph] = ($map[$glyph] ? $map[$glyph] : $glyph);
 		$out[1] .= $map[$glyph];
 		if (strcmp($map[$glyph], "ˈ") === 0 || strcmp($map[$glyph], "ˌ") === 0) {continue;}
 		$out[2] .= $map[$glyph];
 	endforeach;
-	// echo "\n";
-
-	// continue;
-	// foreach($out as &$o):
-		echo str_pad_unicode($out[0], 25, " ");
-		if ($inflections) {
-			echo str_pad_unicode($out[1], 25, " ");
-		}
-		echo str_pad_unicode($out[2], 25, " ");
-
-	// endforeach;
+  echo str_pad_unicode($out[0], 25, " ");
+  if ($inflections) {
+    echo str_pad_unicode($out[1], 25, " ");
+  }
+  echo str_pad_unicode($out[2], 25, " ");
 	echo "\n";
-
-
-
 endforeach;
 
 ini_set("memory_limit", "128M");
