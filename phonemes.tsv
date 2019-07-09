@@ -1,40 +1,40 @@
-arpabet	example	pronouncing	ipa							variants		example		twain
-aa		odd		aa d		ɑ	aa	ɑ	aa	vowel		aa aa0 aa1 aa2	b	b		b	b
-ae		at		ae t		æ	ae	æ	ae	vowel		ae ae0 ae1 ae2	ch	ts		ch	c
-ah		hut		hh ah t		ʌ	ah	ʌ	ah	vowel		ah ah0 ah1 ah2	d	d		d	d
-ao		ought	ao t		ɔ	ao	ɔ	ao	vowel		ao ao0 ao1 ao2	dh	đ		dh	x
-aw		cow		k aw		aʊ	aw	aʊ	aw	vowel		aw aw0 aw1 aw2	er	r		er	er
-ay		hide	hh ay d		aɪ	ay	aɪ	ay	vowel		ay ay0 ay1 ay2	f	f		f	f
-b		be		b iy		b	b	b	b	stop		b				g	ɡ		g	g
-ch		cheese	ch iy z		tʃ	ch	tʃ	ch	affricate	ch				hh	h		hh	h
-d		dee		d iy		d	d	d	d	stop		d				jh	dj		jh	j
-dh		thee	dh iy		ð	dh	ð	dh	fricative	dh				k	k		k	k
-eh		ed		eh d		ɛ	eh	ɛ	eh	vowel		eh eh0 eh1 eh2	l	ʌ		l	l
-er		hurt	hh er t		ɹ̩	er	ɹ̩	er	vowel		er er0 er1 er2	m	m		m	m
-ey		ate		ey t		eɪ	ey	eɪ	ey	vowel		ey ey0 ey1 ey2	n	n		n	n
-f		fee		f iy		f	f	f	f	fricative	f				ng	ng		ng	ng
-g		green	g r iy n	ɡ	g	ɡ	g	stop		g				p	p		p	p
-hh		he		hh iy		h	hh	h	hh	aspirate	hh				r	r		r	r
-ih		it		ih t		ɪ	ih	ɪ	ih	vowel		ih ih0 ih1 ih2	s	c		s	s
-iy		eat		iy t		i	iy	i	iy	vowel		iy iy0 iy1 iy2	sh	z		sh	y
-jh		gee		jh iy		dʒ	jh	dʒ	jh	affricate	jh				t	t		t	t
-k		key		k iy		k	k	k	k	stop		k				th	ħ		th	x
-l		lee		l iy		l	l	l	l	liquid		l				v	v		v	v
-m		me		m iy		m	m	m	m	nasal		m				w	w		w	w
-n		knee	n iy		n	n	n	n	nasal		n				y	y		y	i
-ng		ping	p ih ng		ŋ	ng	ŋ	ng	nasal		ng				z	s		z	z
-ow		oat		ow t		oʊ	ow	oʊ	ow	vowel		ow ow0 ow1 ow2	zh	j		zh	j
-oy		toy		t oy		ɔɪ	oy	ɔɪ	oy	vowel		oy oy0 oy1 oy2	aa	a		aa	a
-p		pee		p iy		p	p	p	p	stop		p				ae	æ		ae	aa
-r		read	r iy d		ɹ	r	ɹ	r	liquid		r				ah	ə		ah	a
-s		sea		s iy		s	s	s	s	fricative	s				ao	o		ao	o
-sh		she		sh iy		ʃ	sh	ʃ	sh	fricative	sh				eh	e		aw	ow
-t		tea		t iy		t	t	t	t	stop		t				ih	ı		ay	ai
-th		theta	th ey t ah	θ	th	θ	th	fricative	th				iy	i		eh	e
-uh		hood	hh uh d		ʊ	uh	ʊ	uh	vowel		uh uh0 uh1 uh2	uh	ɤ		ey	ai
-uw		two		t uw		u	uw	u	uw	vowel		uw uw0 uw1 uw2	uw	u		ih	i
-v		vee		v iy		v	v	v	v	fricative	v				aw	aɤ		iy	i
-w		we		w iy		w	w	w	w	semivowel	w				ay	ai		ow	o
-y		yield	y iy l d	j	y	j	y	semivowel	y				ey	ei		oy	oi
-z		zee		z iy		z	z	z	z	fricative	z				ow	oɤ		uh	u
-zh		seizure	s iy zh er	ʒ	zh	ʒ	zh	fricative	zh				oy	oi		uw	u
+arpabet	example	pronouncing	ipa	category	variants
+aa	odd	aa d	ɑ	vowel	aa aa0 aa1 aa2
+ae	at	ae t	æ	vowel	ae ae0 ae1 ae2
+ah	hut	hh ah t	ʌ	vowel	ah ah0 ah1 ah2
+ao	ought	ao t	ɔ	vowel	ao ao0 ao1 ao2
+aw	cow	k aw	aʊ	vowel	aw aw0 aw1 aw2
+ay	hide	hh ay d	aɪ	vowel	ay ay0 ay1 ay2
+b	be	b iy	b	stop	
+ch	cheese	ch iy z	tʃ	affricate	
+d	dee	d iy	d	stop	
+dh	thee	dh iy	ð	fricative	
+eh	ed	eh d	ɛ	vowel	eh eh0 eh1 eh2
+er	hurt	hh er t	ɹ̩	vowel	er er0 er1 er2
+ey	ate	ey t	eɪ	vowel	ey ey0 ey1 ey2
+f	fee	f iy	f	fricative	
+g	green	g r iy n	ɡ	stop	
+hh	he	hh iy	h	aspirate	
+ih	it	ih t	ɪ	vowel	ih ih0 ih1 ih2
+iy	eat	iy t	i	vowel	iy iy0 iy1 iy2
+jh	gee	jh iy	dʒ	affricate	
+k	key	k iy	k	stop	
+l	lee	l iy	l	liquid	
+m	me	m iy	m	nasal	
+n	knee	n iy	n	nasal	
+ng	ping	p ih ng	ŋ	nasal	
+ow	oat	ow t	oʊ	vowel	ow ow0 ow1 ow2
+oy	toy	t oy	ɔɪ	vowel	oy oy0 oy1 oy2
+p	pee	p iy	p	stop	
+r	read	r iy d	ɹ	liquid	
+s	sea	s iy	s	fricative	
+sh	she	sh iy	ʃ	fricative	
+t	tea	t iy	t	stop	
+th	theta	th ey t ah	θ	fricative	
+uh	hood	hh uh d	ʊ	vowel	uh uh0 uh1 uh2
+uw	two	t uw	u	vowel	uw uw0 uw1 uw2
+v	vee	v iy	v	fricative	
+w	we	w iy	w	semivowel	
+y	yield	y iy l d	j	semivowel	
+z	zee	z iy	z	fricative	
+zh	seizure	s iy zh er	ʒ	fricative	
