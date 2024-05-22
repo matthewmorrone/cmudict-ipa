@@ -6,7 +6,7 @@ error_reporting(0);
 // argument 3: optional, include inflection marker column, defaults to false
 // argument 4: optional, limit number of rows
 
-// example: php main.php ipa.tsv cmu-umbrian.tsv > ipa-umbrian.tsv
+// example: php main.php ipa.tsv cmudict.tsv > output.tsv
 
 ini_set("memory_limit", "256M");
 
