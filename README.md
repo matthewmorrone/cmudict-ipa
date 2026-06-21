@@ -1,19 +1,132 @@
-cmudict-ipa
-===========
+# CMU Dictionary IPA Converter
 
-CMU pronunciation dictionary in IPA instead of their subset of Arpabet. 
+A modern PHP application for converting between CMU Dictionary format and International Phonetic Alphabet (IPA) notation.
 
-You can alter the map file and run it through the main.php script to generate your own dictionary. 
+## Features
 
-It should work on other text files as well, but haven't tried that yet (for example, if you want to try reading something from [Project Gutenburg](https://www.gutenberg.org/) in your script). 
+- Convert CMU Dictionary format to IPA notation
+- Reverse conversion from IPA to CMU format
+- Multiple output formats (TSV, JSON, XML)
+- Batch processing support
+- Custom mapping files
+- Stress marker handling
+- Comprehensive logging
+- Unit tested
 
-Included is Mark Twain's idea:
+## Requirements
 
-## A Plan for the Improvement of Spelling in the English Language
-* A Plan for the Improvement of English Spelling by Mark Twain
-* For example, in Year 1 that useless letter "c" would be dropped to be replased either by "k" or "s", and likewise "x" would no longer be part of the alphabet.
-* The only kase in which "c" would be retained would be the "ch" formation, which will be dealt with later.
-* Year 2 might reform "w" spelling, so that "which" and "one" would take the same konsonant, wile Year 3 might well abolish "y" replasing it with "i" and iear 4 might fiks the "g/j" anomali wonse and for all.
-* Jenerally, then, the improvement would kontinue iear bai iear with iear 5 doing awai with useless double konsonants, and iears 6-12 or so modifaiing vowlz and the rimeining voist and unvoist konsonants.
-* Bai iear 15 or sou, it wud fainali bi posibl tu meik ius ov thi ridandant letez "c", "y" and "x" -- bai now jast a memori in the maindz ov ould doderez -- tu riplais "ch", "sh", and "th" rispektivli.
-* Fainali, xen, aafte sam 20 iers ov orxogrefkl riform, wi wud hev a lojikl, kohirnt speling in ius xrewawt xe Ingliy-spiking werld.
+- PHP 8.1 or higher
+- Composer
+
+## Installation
+
+```bash
+# Clone the repository
+git clone https://github.com/matthewmorrone/cmudict-ipa.git
+cd cmudict-ipa
+
+# Install dependencies
+composer install
+
+# Make the converter executable
+chmod +x bin/convert
+```
+
+## Usage
+
+### Basic Usage
+
+```bash
+# Convert a file from CMU format to IPA
+./bin/convert input.txt output.txt
+
+# Convert using a specific output format
+./bin/convert input.txt output.json --format=json
+
+# Convert from IPA back to CMU format
+./bin/convert input.txt output.txt --reverse
+
+# Convert without stress markers
+./bin/convert input.txt output.txt --no-stress
+
+# Process multiple files
+./bin/convert input_directory/ output_directory/ --batch
+
+# Use a custom mapping file
+./bin/convert input.txt output.txt --mapping=custom_mapping.tsv
+```
+
+### Mapping File Format
+
+The mapping file should be a tab-separated file with two columns:
+
+1. CMU Dictionary phoneme
+2. Corresponding IPA symbol
+
+Example:
+
+```
+AA	ɑ
+AE	æ
+AH	ə
+```
+
+## Development
+
+### Running Tests
+
+```bash
+composer test
+```
+
+### Code Style
+
+```bash
+# Check code style
+composer cs-check
+
+# Fix code style
+composer cs-fix
+```
+
+### Project Structure
+
+```
+.
+├── bin/                    # Command-line executables
+├── config/                 # Configuration files
+├── data/                   # Data files
+│   ├── input/             # Input files
+│   ├── mappings/          # Mapping files
+│   └── output/            # Output files
+├── src/                   # Source code
+│   ├── Command/          # Console commands
+│   ├── Model/            # Data models
+│   └── Service/          # Business logic
+├── tests/                 # Test files
+│   ├── Integration/      # Integration tests
+│   └── Unit/             # Unit tests
+└── var/                  # Variable files (logs, cache)
+    └── logs/             # Log files
+```
+
+## Example: Mark Twain's Spelling Reform
+
+Included is Mark Twain's "A Plan for the Improvement of Spelling in the English Language" as an example text that can be processed using this tool.
+
+## Contributing
+
+1. Fork the repository
+2. Create your feature branch (`git checkout -b feature/amazing-feature`)
+3. Commit your changes (`git commit -m 'Add some amazing feature'`)
+4. Push to the branch (`git push origin feature/amazing-feature`)
+5. Open a Pull Request
+
+## License
+
+This project is licensed under the MIT License - see the LICENSE file for details.
+
+## Acknowledgments
+
+- CMU Dictionary team for their excellent pronunciation dictionary
+- Original cmudict-ipa project contributors

@@ -1,0 +1,11 @@
+#!/usr/bin/env php
+<?php
+
+require __DIR__ . '/../vendor/autoload.php';
+
+use Symfony\Component\Console\Application;
+use CmuDictIpa\Command\ConvertCommand;
+
+$application = new Application('CMU Dictionary IPA Converter', '2.0.0');
+$application->add(new ConvertCommand());
+$application->run(); 
