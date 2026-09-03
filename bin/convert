@@ -8,4 +8,5 @@ use CmuDictIpa\Command\ConvertCommand;
 
 $application = new Application('CMU Dictionary IPA Converter', '2.0.0');
 $application->add(new ConvertCommand());
+$application->setDefaultCommand('convert', true);
 $application->run(); 
